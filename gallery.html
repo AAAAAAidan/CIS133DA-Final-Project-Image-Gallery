@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+<!--
+Image Gallery
+Author: Aidan Zamboni
+Date created: 11/28/17
+-->
+	<title>Image Gallery - Super Useful Images For Your Super Important Work</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="gallery.css" rel="stylesheet">
+	<script type="text/javascript" src="gallery.js"></script>
+	<!--[if it IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--><!--This fixes issues caused in old versions of internet explorer-->
+</head>
+<body>
+	<div id="wrapper"><!--Used for centering the content in CSS-->
+	<header>
+		<h1>Image Gallery</h1>
+	</header>
+
+	<nav><!--Navigational list of pages-->
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main><!--Gallery information-->
+		<table id="gallery">
+			<tr><!--1st row, selected image will be displayed at the end with an enlarged view and column-->
+				<td><img onclick="gallery(0)" src="images/sunset.jpeg" alt="Sunset"></td>
+				<td><img onclick="gallery(1)" src="images/danbo.jpeg" alt="Danbo"></td>
+				<td rowspan="3">
+					<p id="small">Click on the image you want to see, then click on the large image for a full size version!</p>
+					<a id="imgHref" href="images/cityLights.jpeg" target="_blank"><img id="selectedImg" src="images/cityLights.jpeg" alt="Selected image"></a>
+					<!--<a id=sourceHref href="https://www.pexels.com/photo/raised-building-frame-169647/" target="_blank">Source</a>-->
+				</td>
+			</tr>
+
+			<tr><!--2nd row-->
+				<td><img onclick="gallery(2)" src="images/cityLights.jpeg" alt="City lights"></td>
+				<td><img onclick="gallery(3)" src="images/carLights.jpeg" alt="Car lights"></td>
+			</tr>
+
+			<tr><!--3rd row-->
+				<td><img onclick="gallery(4)" src="images/parisPaint.jpeg" alt="Painting of Paris"></td>
+				<td><img onclick="gallery(5)" src="images/cityPaint.jpeg" alt="Painting of a city"></td>
+			</tr>
+		</table>
+	</main>
+	<hr>
+	<footer><!--Contact and copyright information-->
+		All images are free-use under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank">Creative Commons Zero license</a><br>
+		<a href="about.html">List of image sources</a><br>
+		Website created by Aidan
+	</footer>
+	</div>
+</body>
+</html>

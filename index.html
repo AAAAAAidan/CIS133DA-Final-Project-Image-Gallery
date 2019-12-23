@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+<!--
+Image Gallery
+Author: Aidan Zamboni
+Date created: 11/28/17
+-->
+	<title>Image Gallery - Super Useful Images For Your Super Important Work</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="gallery.css" rel="stylesheet">
+	<script type="text/javascript" src="gallery.js"></script>
+	<!--[if it IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--><!--This fixes issues caused in old versions of internet explorer-->
+</head>
+<body>
+	<div id="wrapper"><!--Used for centering the content in CSS-->
+	<header>
+		<h1>Image Gallery</h1>
+	</header>
+
+	<nav><!--Navigational list of pages-->
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<table id="intro1"><!--Welcoming greeting-->
+		<tr>
+
+			<td><!--Image slide, pressing a button will call a function to change the image being viewed-->
+				<button onclick="prev()" class="button"> < </button>
+			</td>
+			<td>
+				<img src="images/sunset.jpeg" id="slide" alt="Image slider">
+			</td>
+			<td>
+				<button onclick="next()" class="button"> > </button>
+			</td>
+
+			<td>
+				<h2>Crazy Beautiful Image Website</h2>
+				<p>Image Gallery has one of the finest selection of images you'll see on the internet. Don't believe it? Just see what our customers had to
+	 			say!</p>
+				<p><span class="italic">"I'm gonna fix that image!"</span>-Satisfied User</p>
+				<p><span class="italic">"This website turned me into a newt!"</span>-Former User</p>
+				<p><span class="italic">"Newts are semiaquatic, alternating between aquatic and terrestrial habitats over the year, sometimes even staying
+					in the water full-time."</span>-An Unexpected User</p>
+			</td>
+
+		</tr>
+	</table>
+	<table id="intro2"><!--This is a slightly more detailed explanation and also shows a video example-->
+		<tr>
+
+			<td>
+				<h2>Useful and Amazing</h2>
+				<p>Image Gallery has beautifully crafted and detailed images made by some of the greatest artists of our time, excluding the ones protected
+			 	by copyright. All of the images you see are free to use as you please, since I'm already using them freely as I please.</p>
+			</td>
+
+			<td>
+				<video controls="controls" width="320" height="260">
+					<source src="images/cityVideo.mp4" type="video/mp4" alt="City lights timelapse">
+				</video>
+			</td>
+
+		</tr>
+	</table>
+	<hr>
+	<footer><!--Contact and copyright information-->
+		All images are free-use under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank">Creative Commons Zero license</a><br>
+		<a href="about.html">List of image sources</a><br>
+		Website created by Aidan
+	</footer>
+	</div>
+</body>
+</html>

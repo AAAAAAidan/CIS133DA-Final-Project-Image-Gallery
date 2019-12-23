@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+<!--
+Image Gallery
+Author: Aidan Zamboni
+Date created: 11/28/17
+-->
+	<title>Image Gallery - Super Useful Images For Your Super Important Work</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="gallery.css" rel="stylesheet">
+	<!--[if it IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]--><!--This fixes issues caused in old versions of internet explorer-->
+</head>
+<body>
+	<div id="wrapper"><!--Used for centering the content in CSS-->
+	<header>
+		<h1>Image Gallery</h1>
+	</header>
+
+	<nav><!--Navigational list of pages-->
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main class="main2"><!--Form for contacting the gallery-->
+		<div>
+			<img class="map" src="images/parisPaint.jpeg" alt="Paris" usemap="parisMap">
+			<map name="parisMap">
+				<area shape="polygon" coords="115,185,157,0,200,185" href="https://en.wikipedia.org/wiki/Eiffel_Tower" target="_blank" alt="Eiffel Tower">
+			</map>
+		</div>
+
+		<h2>Give me feedback!</h2>
+		<p>Required*</p>
+
+		<form method="post" action="http://webdevbasics.net/scripts/pacific.php"><!--This form is used to get the user's contact info and input-->
+			<label for="myName">* First Name:</label><input type="text" name="myName" required="required">
+			<label for="myEmail">* Email:</label><input type="email" name="myEmail" required="required">
+			<label for="myPhone">Phone:</label><input type="tel" name="myPhone">
+			<label for="arrivalDate">Arrival Date:</label><input type="date" name="arrivalDate">
+			<label for="rating">Overall Rating:</label><input type="range" name="rating" min="1" max="5">
+			<label for="myComments">Comments:</label><textarea name="myComments" rows="2" cols="20"></textarea>
+			<input type="submit" id="mySubmit" value="Submit">
+		</form>
+
+	</main>
+	<hr>
+	<footer><!--Contact and copyright information-->
+		All images are free-use under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en" target="_blank">Creative Commons Zero license</a><br>
+		<a href="about.html">List of image sources</a><br>
+		Website created by Aidan
+	</footer>
+	</div>
+</body>
+</html>

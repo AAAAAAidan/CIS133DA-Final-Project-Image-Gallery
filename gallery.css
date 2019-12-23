@@ -1,0 +1,239 @@
+body{
+	background-color: #8a0f0f;
+	font-family: Verdana, Arial, sans-serif;
+}/*This wull be the default background color. It will always be seen around the sides, except for mobile*/
+
+header, nav, main, footer{
+	display: block;
+}/*Prevents rendering issues caused in some older browsers*/
+
+header{
+	padding: 0;
+	margin: 0 0 -1.5em 1em;
+	color: #8a0f0f;
+}/*This is used to properly space the title*/
+
+nav{
+	background-color: #595959;
+}
+
+li{
+	padding: 0.6em;
+  display: inline;
+  list-style-type: none;
+}/*This changes the list to horizontal*/
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}/*For link recognition outside of the nav*/
+
+nav a{
+	color: #e6e6e6;
+}
+
+nav a:hover{
+	text-decoration: none;
+	background-color: black;
+}/*For link recognition*/
+
+h1{
+  font-size: 48px;
+  font-family: verdana;
+  font-weight: bold;
+}
+
+h2{
+  margin: 0;
+  text-align: center;
+}
+
+main{
+	width: 90%;
+	margin: auto;
+}/*This helps space out the main content*/
+
+main table img{
+	width: 192px;
+	height: 144px;
+}/*This allows more room for the larger image*/
+
+table{
+	margin: 2em 0;
+	background-color: #cccccc;
+	border: 1px solid #808080;
+}
+
+table p{
+	padding: 0 5%;
+}
+
+td{
+	padding: 0.5em;
+	/*border: 1px solid black;*/
+}/*Border is used when testing padding and margin*/
+
+table img{
+  width: 320px;
+  height: 240px;
+}/*This keeps the images from being too large*/
+
+main table img:hover{
+	cursor: pointer;
+}/*This shows that they are clickable*/
+
+button{
+	height: 240px;
+}
+
+label{
+	float: left;
+	width: 8em;
+}
+
+input, textarea{
+	margin-bottom: 1em;
+	display: block;
+}
+
+dt{
+	font-weight: bold;
+}
+
+dd{
+	margin-bottom: 1em;
+}
+
+hr{
+	border: 10px solid #595959;
+}/*This helps space the the main and footer from each other*/
+
+footer{
+	margin: 0.8%;
+  text-align: center;
+	font-size: 14px;
+}/*Keeps the footer centered*/
+
+.italic{
+	margin-left: 1em;
+	font-style: italic;
+}
+
+.main2{
+	padding: 1em 0;
+}
+
+.main2 h2{
+	padding-left: 1em;
+	text-align: left;
+}
+
+.map{
+	margin: 3em 1em 3em 0;
+	float: right;
+	width: 320px;
+	height: 240px;
+	border-radius: 40%;
+	background-size: 100% 100%;
+}/*This is used to give the maps space and customize their size and borders*/
+
+#intro1{
+	border-left: 0;
+}
+
+#intro2{
+	margin-left: 3%;
+	border-right: 0;
+}
+
+#intro1, #intro2{
+	width: 97%;
+}/*This is the main content of the index. This gives them a cleaner feel*/
+
+#gallery{
+	width: 100%;
+}
+
+#gallery td{
+	width: 50%;
+}/*This gives them a idth that adjusts to the size of the screen well*/
+
+#selectedImg{
+	width: 640px;
+	height: 480px;
+}/*This image is bigger since it's the main image to be viewed*/
+
+#sourceTable{
+	border-collapse: collapse;
+}
+
+#sourceTable tr:nth-of-type(odd){
+	background-color: #b34d4d;
+}
+
+#sourceTable th, #sourceTable td{
+	padding: 10px;
+	border: 2px solid #808080;
+}
+
+#small{
+	border: 1px solid #808080;
+	font-size: 12px;
+}/*For a paragraph section I want set differently*/
+
+#wrapper{
+	background-color: #e6e6e6;
+	height: 100%;
+  width: 90%;
+  margin: auto;
+}/*This keeps the content colored and centered*/
+
+@media only screen and (max-width: 1024px){
+
+	body{
+	  margin: 0;
+	}/*This gets rid of the red background, optimal for smaller screens*/
+
+	main table img{
+		width: 120px;
+		height: 90px;
+	}
+
+	#selectedImg{
+		width: 320px;
+		height: 240px;
+	}
+
+		#wrapper{
+		  width: 100%;
+		}/*Sets the entire page to 100% width, this is for also part of getting rid of the red background*/
+}
+
+/*These customizations are optimal for mobile viewing*/
+@media only all and (max-width: 768px){
+
+	main table img{
+		width: 80px;
+		height: 60px;
+	}
+
+	#gallery td{
+		padding: 0;
+	}/*This gives the images less space, but it allows more room for image sizing*/
+
+	.map{
+		margin: 0 2em 2em 0;
+	}
+
+	#selectedImg{
+		width: 256px;
+		height: 192px;
+	}
+
+	#intro1 h2, #intro1 p, #intro2 video{
+		display: none;
+	}/*TODO Removes unnessecary content. Unoptimal, will be updated in the future*/
+}
